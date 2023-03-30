@@ -1,15 +1,18 @@
 @font-face {
   font-family: CM;
-  src: url("/fonts/cmr10.ttf");
+  src: url("https://the-refrigerator.github.io/webdev-bootcamp-code/basicCSS/fonts/cmr10.ttf");
 }
 @font-face {
   font-display: fallback;
   font-family: Iosevka Web;
   font-style: normal;
   font-weight: 400;
-  src: url(/fonts/iosevka.woff2) format("woff2"),
-    url(/fonts/iosevka.woff) format("woff"),
-    url(/fonts/iosevka.ttf) format("truetype");
+  src: url(https://the-refrigerator.github.io/webdev-bootcamp-code/basicCSS/fonts/iosevka.woff2)
+      format("woff2"),
+    url(https://the-refrigerator.github.io/webdev-bootcamp-code/basicCSS/fonts/iosevka.woff)
+      format("woff"),
+    url(https://the-refrigerator.github.io/webdev-bootcamp-code/basicCSS/fonts/iosevka.ttf)
+      format("truetype");
 }
 /*Color Pallete: https://github.com/catppuccin/catppuccin */
 
@@ -155,7 +158,7 @@ a:hover {
 
 #hero {
   color: var(--base);
-  background-image: url("/img/wp2790135.jpg");
+  background-image: url("https://the-refrigerator.github.io/webdev-bootcamp-code/basicCSS/img/wp2790135.jpg");
   padding: 4rem 1rem 10rem 1rem;
   font-size: 120%;
 }
