@@ -95,7 +95,7 @@ article {
 }
 
 blockquote {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -236,6 +236,10 @@ footer .copy {
   .logo {
     flex-basis: 50%;
     text-align: left;
+  }
+
+  blockquote {
+    width: 60%;
   }
 
   .latex {
