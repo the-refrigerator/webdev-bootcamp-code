@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>I like shrek</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+      integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
+      crossorigin="anonymous"
+    />
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+      integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+    />
+    <link rel="stylesheet" href="css/highlightTheme.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/latex.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <ul>
+          <li class="logo"><a href="">LaTeX</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li>
+            <a
+              href="https://github.com/the-refrigerator/ULFG-Notes"
+              class="button"
+              >My Notes!</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="line"></div>
+    <div class="hero">
+      <section id="hero">
+        <h2>LaTeX</h2>
+        <p>The typesetting system for proffesionals.</p>
+        <div class="center">
+          <a href="" class="button">Try Now!</a>
+        </div>
+      </section>
+    </div>
+    <article>
+      <h2>What is LaTeX?</h2>
+      According to Wikipedia
+      <blockquote cite="https://en.wikipedia.org/wiki/LaTeX">
+        <div class="quoteline"></div>
+        <div class="text">
+          LaTeX is a software system for document preparation. When writing, the
+          writer uses plain text as opposed to the formatted text found in
+          WYSIWYG word processors like Microsoft Word, LibreOffice Writer and
+          Apple Pages.
+        </div>
+      </blockquote>
+      <p>
+        It's mainly used to typeset complex math using only a few lines of code!
+      </p>
+      <p>Take for example Cauchy's integral formula</p>
+      <div class="latex">
+        <pre><code class="language-tex">$$
+    f^{(n)}(a) = \frac{n!}{2\pi i}
+                 \oint_{\gamma}\frac{f(z)}{(z-a)^{n+1}}\, dz
+$$ </code></pre>
+        <div class="math">
+          $$f^{(n)}(a) = \frac{n!}{2\pi i}
+          \oint_{\gamma}\frac{f(z)}{(z-a)^{n+1}}\, dz$$
+        </div>
+      </div>
+      <p>
+        LaTeX allows you to focus of the content and not worry about how things
+        look. It is also allows you add citations and cross references quite
+        easily using packages like <a href="http://www.bibtex.org/">BibTeX</a>.
+      </p>
+      <p>
+        LaTeX can also generate beautiful looking plots using Tikz and PGFPlots
+      </p>
+      <div class="plots">
+        <img class="span2" src="img/functionPlot.webp" alt="" />
+        <img src="img/cylinder-segment.png" alt="" />
+        <img src="img/Plgplotsex3.png" alt="" />
+      </div>
+
+      <h2>Basic LaTeX Document</h2>
+      To get started with LaTeX, head over to
+      <a href="https://www.overleaf.com" target="_blank">Overleaf</a>, create a
+      new document and you should see something like this
+
+      <div class="latex">
+        <pre><code class="language-tex">\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Example Project}
+\author{Your Name Here}
+\date{April 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\end{document} </code></pre>
+        <img src="img/blankpdf.png" alt="" />
+      </div>
+
+      And that's all the energy I have, if you actually wanna learn LaTeX
+      properly I recommend Dr. Trefor Bazett's
+      <a href="https://www.youtube.com/watch?v=Jp0lPj2-DQA" target="_blank"
+        >playlist</a
+      >
+      on the subject. Oh and by the way, the webpage is responsive so view it on
+      a mobile layout as well!
+    </article>
+    <div class="line"></div>
+    <div class="foot">
+      <footer>
+        <div class="shame">
+          <p>
+            I really wanted to put something here instead of leaving it blank.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore,
+            ratione dolores odit minus modi quasi odio libero vero quidem
+            magnam!
+          </p>
+        </div>
+        <p class="copy">
+          Copyright (c) 2023 Ahmad Abu Zainab. All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

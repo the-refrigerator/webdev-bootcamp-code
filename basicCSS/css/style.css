@@ -1,0 +1,257 @@
+@font-face {
+  font-family: CM;
+  src: url("/fonts/cmr10.ttf");
+}
+@font-face {
+  font-display: fallback;
+  font-family: Iosevka Web;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/iosevka.woff2) format("woff2"),
+    url(/fonts/iosevka.woff) format("woff"),
+    url(/fonts/iosevka.ttf) format("truetype");
+}
+/*Color Pallete: https://github.com/catppuccin/catppuccin */
+
+:root {
+  --rosewater: #dc8a78;
+  --flamingo: #dd7878;
+  --pink: #ea76cb;
+  --mauve: #8839ef;
+  --red: #d20f39;
+  --maroon: #e64553;
+  --peach: #fe640b;
+  --yellow: #df8e1d;
+  --green: #40a02b;
+  --teal: #179299;
+  --sky: #04a5e5;
+  --sapphire: #209fb5;
+  --blue: #1e66f5;
+  --lavender: #7287fd;
+  --text: #000000;
+  --subtext1: #b7b9c8;
+  --subtext0: #6c6f85;
+  --overlay2: #7c7f93;
+  --overlay1: #8c8fa1;
+  --overlay0: #9ca0b0;
+  --surface2: #acb0be;
+  --surface1: #bcc0cc;
+  --surface0: #ccd0da;
+  --base: #eff1f5;
+  --mantle: #e6e9ef;
+  --crust: #dce0e8;
+}
+
+/* generic site styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: CM, sans-serif;
+  font-size: 1.2rem;
+  background-color: var(--crust);
+  padding: 0;
+  margin: 0;
+}
+
+section,
+article {
+  max-width: 1200px;
+  margin: 0 auto 5rem auto;
+  padding: 0 1rem;
+}
+
+.button {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+  border-radius: 5px;
+  padding: 0.4rem;
+  text-decoration: none;
+  color: var(--text);
+  background-color: var(--base);
+}
+
+.center {
+  text-align: center;
+}
+
+.header {
+  background-color: var(--surface0);
+}
+
+.line {
+  background-color: var(--red);
+  height: 2px;
+}
+
+blockquote {
+  width: 60%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.quoteline {
+  height: auto;
+  width: 20px;
+  background-color: var(--subtext0);
+  margin-right: 1rem;
+}
+
+.text {
+  font-style: italic;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav ul {
+  padding: 2rem;
+  padding-top: 1rem;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  color: var(--text);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 10%;
+}
+
+.logo {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  font-size: 90%;
+  color: var(--text);
+}
+
+a {
+  color: var(--sapphire);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--lavender);
+}
+
+.hero {
+  background-color: var(--subtext0);
+}
+
+#hero {
+  color: var(--base);
+  background-image: url("/img/wp2790135.jpg");
+  padding: 4rem 1rem 10rem 1rem;
+  font-size: 120%;
+}
+
+#hero h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.plots {
+  margin: 0 auto;
+}
+
+.plots img {
+  background-color: white;
+  width: 100%;
+}
+
+.span2 {
+  grid-column: 1/2 span;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  overflow: scroll;
+  font-family: "Iosevka Web";
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+  text-align: left;
+}
+
+.latex img {
+  padding: 1rem;
+  width: 100%;
+}
+
+.math {
+  margin: auto auto;
+}
+
+.foot {
+  background-color: var(--subtext0);
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.shame {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.shame p {
+  width: 400px;
+}
+
+footer .copy {
+  font-size: 70%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+@media (min-width: 900px) {
+  nav ul {
+    padding: 2rem;
+    font-size: 2rem;
+    justify-content: space-between;
+    gap: 2%;
+  }
+
+  .logo {
+    flex-basis: 50%;
+    text-align: left;
+  }
+
+  .latex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .plots {
+    width: 60%;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 10px;
+  }
+  .plots img {
+    height: 100%;
+  }
+  code[class*="language-"],
+  pre[class*="language-"] {
+    overflow: visible;
+  }
+}
